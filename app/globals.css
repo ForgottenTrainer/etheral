@@ -131,3 +131,36 @@
 .animate-cloud-gentle {
   animation: cloud-float-reverse 50s ease-in-out infinite;
 }
+
+/* Estrellas pequeñas */
+.bg-stars {
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, white, transparent),
+    radial-gradient(1px 1px at 80% 70%, white, transparent),
+    radial-gradient(1px 1px at 50% 50%, white, transparent),
+    radial-gradient(1px 1px at 10% 80%, white, transparent),
+    radial-gradient(1px 1px at 90% 20%, white, transparent);
+  background-size: 300px 300px;
+}
+
+/* Estrellas más grandes */
+.bg-stars-large {
+  background-image:
+    radial-gradient(2px 2px at 25% 40%, white, transparent),
+    radial-gradient(2px 2px at 75% 60%, white, transparent),
+    radial-gradient(2px 2px at 50% 20%, white, transparent);
+  background-size: 600px 600px;
+}
+
+@keyframes stars-drift {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-200px);
+  }
+}
+
+.animate-stars-drift {
+  animation: stars-drift 120s linear infinite;
+}

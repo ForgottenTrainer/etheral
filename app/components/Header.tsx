@@ -12,7 +12,11 @@ const Header = () => {
       
       {/* Overlay para unificar tonos */}
       <div className="absolute inset-0 bg-indigo-900/20 mix-blend-soft-light -z-20" />
-      
+      {/* Estrellas - capa lejana */}
+      <div className="absolute inset-0 -z-20 bg-stars opacity-60" />
+      <div className="absolute inset-0 -z-10 bg-stars-large opacity-35 animate-stars-drift" />
+
+
       {/* Nube 1 - Movimiento lento */}
       <Image
         src="/clouds/cloud-1.png"
